@@ -1,0 +1,394 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body {
+        margin: 0;   
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style:italic;
+        
+        
+        
+      }
+
+ol, ul { 
+    list-style:none;
+}
+a { 
+    text-decoration:none;
+}
+/*estilo del header*/
+header{
+    display:flex;
+    background-image: linear-gradient(180deg, #4aa8c9, #1d4476);
+    align-items:center;
+}
+.fa-solid {
+
+margin: 0% 0% 15% 1%;
+font-size: 30px;
+color: pink;
+}
+header nav ul {
+    display:inline-flex;
+  gap: 1.1em;
+    
+  }
+header nav ul li {
+    position: relative;
+    top: 100px; 
+}
+  .iconoinicio {
+    
+    background: linear-gradient(135deg, #ff007a, #5900ff);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Ajuste de sombra */
+    border-radius: 12px; /* Redondeado opcional */
+    
+  }
+  .iconometa {
+    background: linear-gradient(135deg, #ff007a, #5900ff);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Ajuste de sombra */
+    border-radius: 12px; /* Redondeado opcional */
+  }
+  .iconodiseño {
+    background: linear-gradient(135deg, #ff007a, #5900ff);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Ajuste de sombra */
+    border-radius: 12px; /* Redondeado opcional */}
+
+  .iconoservicios {
+    background: linear-gradient(135deg, #ff007a, #5900ff);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Ajuste de sombra */
+    border-radius: 12px; /* Redondeado opcional */
+  }
+  .iconocontacto {
+    background: linear-gradient(135deg, #ff007a, #5900ff);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Ajuste de sombra */
+    border-radius: 12px; /* Redondeado opcional */
+  }
+  .logo {
+    width: 80%; /* Ajusta según el tamaño que necesites */
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Sombra con desenfoque */
+   
+  }
+
+/*secciones*/
+
+/* Variables CSS */
+/*:root {
+    --primary-color: #2196F3;
+    --secondary-color: #64B5F6;
+    --font-family: 'Poppins', sans-serif;
+  }*/
+  
+  .hero {
+    display: flex;
+    padding: 5rem;
+    
+  }
+ 
+  /*colores*/
+  /*  linear-gradient(180deg, #4aa8c9, #1d4476); 
+  */
+  .hero-text {   
+    /*font-family: var( --font-family);
+    color: var(--primary-color);*/
+    text-align: left;
+    font-size: 20px;
+    line-height: 120%;
+    width: 90%;
+    position: relative;
+    top: 25%;
+    font-family: "Roboto", sans-serif;
+    color: black;
+  }
+  
+  .hero-image {
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    
+  }
+  
+  /* Media query para pantallas pequeñas */
+ 
+  @media (max-width: 768px) {
+    .hero {
+    display:  block;
+      align-items: center;
+    }
+  }
+  @media (max-width: 768px) {
+    header {
+    display:block;
+    
+    }
+  }
+  @media (max-width: 768px) {
+    header nav ul {
+    display: flex;
+    position: relative;
+    bottom: 90px ;
+    right: 50px;
+    
+    }
+  }
+  @media (max-width: 768px) {
+    .logo {
+    width: 100%;
+    display: flex;
+    position: relative;
+    left: 25%;
+        }
+  }
+
+  @media (max-width: 768px){
+    .iconoinicio {
+      width: 80%;
+      display: flex;
+      position: relative;
+      bottom: 30px;
+    }}
+ 
+    @media (max-width: 768px){
+      .iconometa {
+        width: 80%;
+        display: flex;
+      position: relative;
+      bottom: 30px;
+      }}
+      @media (max-width: 768px){
+        .iconodiseño {
+          width: 80%;
+          display: flex;
+      position: relative;
+      bottom: 30px;
+        }}
+        @media (max-width: 768px){
+          .iconoservicios {
+            width: 80%;
+            display: flex;
+      position: relative;
+      bottom: 30px;
+          }}
+          @media (max-width: 768px){
+            .iconocontacto {
+              width: 80%;
+              display: flex;
+      position: relative;
+      bottom: 30px;
+            }}
+            @media (max-width: 768px){
+              header nav ul {
+                display: flex;
+                position: relative;
+                left: 6%;
+              }}
+  @media (min-width: 769px) and (max-width: 1024px){
+    header div img {  
+
+      display:flex;
+ width: 50%;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1024px){
+    .iconoinicio {
+      width: 150%;
+      
+    }}
+    @media (min-width: 769px) and (max-width: 1024px){
+      .iconometa {
+        width: 150%;
+      }}
+      @media (min-width: 769px) and (max-width: 1024px){
+        .iconodiseño {
+          width: 150%;
+          
+     
+        }}
+        @media (min-width: 769px) and (max-width: 1024px){
+          .iconoservicios {
+            width: 150%;
+           
+     
+          }}
+          @media (min-width: 769px) and (max-width: 1024px){
+            .iconocontacto {
+              width: 150%;
+            }}
+        
+     
+      @media (min-width: 769px) and (max-width: 1024px) 
+      {
+          header nav ul {
+          display: flex;
+          position: relative;
+          bottom: 55px ;
+          right: 50px;
+          gap: 1.6em;
+        }
+        }
+       
+      
+          header nav ul {
+          display: flex;
+          position: relative;
+          bottom: 70px ;
+          right: 50px;
+       }
+        
+@media (max-width: 768px){
+   .fa-solid {
+
+    margin: 1% 0% 0% 1%;
+    font-size: 30px;
+    color: white;
+    }}
+  @media (min-width: 769px) and (max-width: 1024px) {
+          .hero {
+            display: block;
+          }
+        }
+        @media (min-width: 1025px)
+  {
+    .hero {
+      display: block;
+    }
+  }
+    @media (max-width: 768px){
+      .hero-text {   
+        /*font-family: var( --font-family);
+        color: var(--primary-color);*/
+        text-align: left;
+        font-size: 20px;
+        line-height: 120%;
+        width: 90%;
+        font-family: "Roboto", sans-serif;
+        color: black;
+      }
+    }
+
+/*secciones en main*/
+
+/*seccion acercademi*/
+
+.about {
+    padding: 2rem;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .about-image {
+    display:grid ;
+    margin: 5px;
+    width: 20%;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 3px 3px 3px rgba(189, 20, 231, 0.5); /*sombras*/
+     /* Estilos para la imagen */
+  }
+  
+  .about-text {
+    color: black;
+    /* Estilos para el texto */
+  }
+
+
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction:column-reverse;
+      align-items:center;
+         }
+  
+  }
+  @media (max-width: 768px) {
+    .about-content .about-text h2{
+      text-align: left;
+     box-shadow: 0px 3px 0px 0px rgba(189, 20, 231, 0.5);
+     
+      
+         }
+  
+  }
+  @media (max-wicth: 768px)
+{
+  .hero-text {
+        font-size: 14px;
+      }
+  }
+
+/*articulo trabajos*/
+
+.trabajos-descripcion 
+{
+    color: black;
+font-size: 20px;
+text-align: center;
+}
+    .trabajos-grid {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        gap: 4rem;
+      }
+      
+      .trabajo-card {
+        max-width: 20%;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 20px;
+        margin: 1rem;
+      }
+      
+      .trabajo-card img {
+        border-radius: 10px;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+      }
+      
+      .ver-mas {
+        display: inline-block;
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+/*seccion servicios*/
+.seccionservicios{
+  text-align: center;
+}
+
+.seccioncontacto {text-align: center;}
+
+
+
+    
+/*formulario*/  
+
+
+ /* Estilos para pantallas más pequeñas (hasta 768px) */
+/* @media (max-width: 768px) {
+    .container{
+        background-color: aquamarine;
+    }}
+    @media (max-width: 768px){
+        .inicio {
+            width: 80%;
+}
+    }
+    @media(max-width: 768px) {
+        #inicio{
+            text-align:justify ;
+        }
+        
+    }
+
+ /*Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
