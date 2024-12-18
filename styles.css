@@ -5,21 +5,37 @@
     margin: 0;
     padding: 1;
 }
+/*estilos y decoraciones de listas*/
+ul li 
+{ 
+list-style: none;
+
+}
+ul li a
+{
+    text-decoration: none;
+   
+}
 /*titulos, letras*/
 h2, h3, h4
 {
 color: #0047AB;
 }
+/*color de h3 y parrafos*/
 h3, p
 {
     color: #333333;
 }
+/*body*/
 body 
 {
     
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
 background-color:#F2F2F2 ;
 }
- /*ESTILO HEADER*/
+
 
 /*colores 
 :root {
@@ -29,36 +45,45 @@ background-color:#F2F2F2 ;
     --gris-oscuro: #333333;
     --naranja-suave: #FF7F50;
     --celeste-pastel: #D4EFFF; */
+
+     /*ESTILO HEADER*/
  header 
  {
+    
+    
+padding: 10px;
     background-color:#FFFFFF;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid #e0e0e0;
+    
+  
  }
-    
+ header .logo-menu 
+ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625em;
+ }
 
-    
- 
-header .logo
+header a 
 {
-    
-    padding: 0% 0% 0% 0.5%;
-   
+    color:blue;
+    font-size: 1em;
 }
 /* ESTILO DE NAV*/
  /*estilo de la lista  en nav*/
  nav ul
 {
-    list-style: none;
+
     gap: 1.1em;
 display:flex; 
 }
  nav ul li a 
  {
-    font-family: Arial,  sans-serif;
-    font-size: 18px;
+    font-size: 1.3em;
     color:#333333;
-text-decoration: none;
+
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid #e0e0e0;
 }
@@ -77,50 +102,126 @@ header .cta
 
 .container {
   display: grid;
-    grid-template-columns: 1fr 300px; /*o del aside según sea necesario */
+    grid-template-columns: 1fr 18.75em; /*o del aside según sea necesario */
   }
 main {
-    padding: 20px;
+    padding: 1.3em;
     font-family: Arial, sans-serif;
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 1.3em;
     padding: 10px;
     border: 1px solid #333333;
-    border-radius: 5px;
-   
+    border-radius: 0.32em;
 }
+
 .seccion-inicio 
-{display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+{
+    display:flex;
+}
+.titulo-seccion-inicio 
+{
+    padding: 5px;
+}
+.h3-seccion-inicio 
+{
+    position:relative;
+    left: 32%;
+    width: 25%;
+    bottom: 5%;
+    text-align: center;
+    font-size: 0.95em;
+}
+.texto-seccion-inicio 
+{
+    text-align: right;
+    width: 30%;
+    display: flex;
+    position: relative;
+    left: 30%;
+    bottom: 5%;
+}
+.imagen-seccion-inicio
+{
+    display: flex;
+    position: relative;
+    right: 30%;
+    
 }
 .seccion-inicio, .seccion-2 {
     background-color: #f8f9fc;
     }   
 
+.contenedor-tarjetas 
+{
+    
+    display: flex;
+    justify-content:space-evenly;      
+    gap: 4rem;
+}
+.h3-tarjetas
+{
+    text-align: center;
+    padding: 0.6em;
+}
+.tarjeta 
+{ 
+    font-size: 0.88em;
+    display: block;
+    justify-content: center;
+    padding: 0.32;
+    margin: 1%;
+    border: 2px solid #333333;
+    border-radius: 8%;
+    background-color: #D4EFFF;
+    box-shadow: green}
+
+.imagen-tarjeta{
+padding: 0.3em;
+}
+
+.ver-mas 
+{
+    background-color: #cce2ff;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 0.94em;
+    margin: 5%;
+}
+.texto-tarjeta 
+{
+    width: 16.8em;
+    text-align: center;
+    padding: 0.5em;
+}
+
 .seccion-1 .seccion-3 {
     background-color: #FFFFFF;
 }
 
-
+.texto-seccion-3 {
+padding: 0.5em;
+}
 .aside-hoy {
    border: 1px solid #cce5ff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     left: 47%;;
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 0.6em;
+    padding: 0.6em;
     background-color:#D4EFFF;
-    border-radius: 5px;
+    border-radius: 0.3em;
 }
 /*FOOTER*/
 footer {
-    font-size: 14px;
+    font-size: 0.88em;
     background-color: #0047AB; /* Azul cobalto */
     
-    padding: 10px 0;
+    padding: 0.94em;
     text-align: center;
+
+    
 }
 footer p 
 {
@@ -132,21 +233,68 @@ footer a {
 }
 footer ul
 { 
-    display:inline-flex;
+    display:flex;
   gap: 1.2em;  
+  justify-content: center;
 }
-footer ul li 
-{ 
-list-style: none;
 
+/*menu responsivo*/
+
+#check {
+
+    display: none;
 }
-footer ul li a
-{
-    text-decoration: none;
-   
+
+.checkbtn {
+
+    font-size: 1.5em;
+    color:black;
+    float: right;
+    line-height: 5em;
+    margin-right: 2.5em;
+    cursor: pointer;
+    display: none;
 }
+  
 @media (max-width: 768px) {
-    .container {
-      grid-template-columns: 1fr;
-    }
-  }
+
+.container {
+    display: flex;
+
+}  
+.seccion-inicio {
+    display: flex;
+}
+.checkbtn {
+    display: block;
+}
+#encabezado ul
+{
+position: fixed;
+width: 100%;
+height: 100%;
+background-color:rgb(82, 197, 126);
+text-align: center;
+
+    top: 5em;
+    left: 100%;
+    transition: all 0.5s;
+}
+#check:checked ~ ul {
+    left: 0%;
+    display: block;
+}
+
+#encabezado nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+#encabezado nav ul li a {
+    font-size: 20px;
+}
+#check:checked ~ .checkbtn {
+    color: #0047AB;
+}
+}

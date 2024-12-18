@@ -1,196 +1,332 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-   
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mi primera web</title>
-       <!--archivo con los estilos-->
+    <!--archivo con los estilos-->
     <link rel="stylesheet" href="styles.css">
-        <!--Traigo un icono de este sitio-->
+    <!--Traigo un icono de este sitio-->
     <script src="https://kit.fontawesome.com/89c07f2539.js" crossorigin="anonymous"></script>
-        <!--agrego fuentes de google-->
+    <!--agrego fuentes de google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
 
 </head>
- <a href="index.html" target="_blank"><i class="fa-regular fa-lightbulb"></i></a>
+
 <body>
 
-   <div class="contenedor-principal" id="arriba">
-        <header>
+    <div class="contenedor-principal" id="arriba">
+        <header id="encabezado">
+            <a href="index.html" target="_blank"><i class="fa-regular fa-lightbulb"></i></a>
+            <!-- logo -->
+            <div class="logo-menu">
+                <div class="logo">
 
-                                        <!-- logo -->
-            <div class="logo">
-                <a href="#inicio">
-                    <img src="img/logo.png" alt="Logo de Mi Sitio" /></a>
-            </div>
-                                        <!-- menú principal navegación -->    
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#acercademi">Acerca de mí</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="formulario/formulario.html">Contáctanos</a></li>
-                </ul>
-            </nav>
-                                         <!-- redes sociales -->     
+                    <img src="img/logo.png" alt="Logo de Mi Sitio" />
+                </div>
+                <!-- menú principal navegación -->
+                <nav>
+                    <input type="checkbox" id="check" />
+                    <label for="check" class="checkbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#acercademi">Acerca de mí</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="formulario/formulario.html">Contáctanos</a></li>
+                    </ul>
+                </nav>
+            </div> <!-- redes sociales -->
             <div class="redes-sociales">
-                <a href="https://www.facebook.com/tusitio" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>  
-                <a href="https://www.instagram.com/tusitio" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.facebook.com/tusitio" target="_blank"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/tusitio" target="_blank"><i
+                        class="fa-brands fa-square-instagram"></i></a>
             </div>
-                                        <!-- formulario -->
+            <!-- formulario -->
             <div class="cta">
                 <a href="./formulario/formulario.html" class="boton">Contáctanos</a>
             </div>
-    
+
         </header>
-    </div>
 
-        
 
-    <div class="container">
-     <main id="seccion-principal">
-            <!-- Sección Inicio -->
-            <section id="Inicio" class="seccion-inicio">
-                <div class="acerca-de">
-                    <h2>Acerca de mi</h2>
-                     <h3>¡Bienvenido a mi portafolio de innovación tecnológica!</h3>
-                 
-                        <p>Soy un apasionado por la tecnología y las soluciones creativas que generan impacto positivo. A lo largo de mi trayectoria, he trabajado en proyectos que combinan innovación, eficiencia y funcionalidad, con el objetivo de resolver problemas y aprovechar al máximo el potencial de las herramientas tecnológicas.
 
-                            Mi enfoque se centra en entender las necesidades de cada cliente o proyecto, diseñando soluciones personalizadas que conecten con las personas y añadan valor real. Desde el desarrollo de estrategias tecnológicas hasta la creación de productos digitales innovadores, cada paso refleja mi compromiso con la calidad y la mejora continua.
-                    
-                            Además de mi experiencia técnica, me motiva aprender constantemente, explorar nuevas ideas y colaborar con otros para hacer realidad proyectos que marcan la diferencia. Este portafolio es una muestra de lo que he logrado y un punto de partida para lo que puedo construir junto a quienes comparten esta visión.
-                        </p>
-                
-                
-                </div>
-                <div>
-                 <img src="img/acercademi.png" alt="soluciones tecnologicas">
-                </div>
-            </section>
-        
-            <!-- Sección 1 -->
-            <section id="acercademi" class="seccion-1">
+        <div class="container">
 
-                  <div class="acerca-de">
-                        <h2>Acerca de mi</h2>
-                        <p>Soy un apasionado por la tecnología y las soluciones creativas que generan impacto positivo. A lo largo de mi trayectoria, he trabajado en proyectos que combinan innovación, eficiencia y funcionalidad, con el objetivo de resolver problemas y aprovechar al máximo el potencial de las herramientas tecnológicas.
+            <main id="seccion-principal">
+                <!-- Sección Inicio -->
+                <section id="Inicio" class="seccion-inicio">
+                    <div class="acerca-de">
+                        <div class="titulo-seccion-inicio">
+                            <h2>Acerca de mi</h2>
+                        </div>
+                        <div class="h3-seccion-inicio">
+                            <h3>¡Bienvenido a mi portafolio!</h3>
+                        </div>
 
-                            Mi enfoque se centra en entender las necesidades de cada cliente o proyecto, diseñando soluciones personalizadas que conecten con las personas y añadan valor real. Desde el desarrollo de estrategias tecnológicas hasta la creación de productos digitales innovadores, cada paso refleja mi compromiso con la calidad y la mejora continua.
-                    
-                            Además de mi experiencia técnica, me motiva aprender constantemente, explorar nuevas ideas y colaborar con otros para hacer realidad proyectos que marcan la diferencia. Este portafolio es una muestra de lo que he logrado y un punto de partida para lo que puedo construir junto a quienes comparten esta visión.
-                        </p> 
+                        <div class="texto-seccion-inicio">
+                            <p>Soy un apasionado por la tecnología y las soluciones creativas que generan impacto
+                                positivo. A lo largo de mi trayectoria, he trabajado en proyectos que combinan
+                                innovación, eficiencia y funcionalidad, con el objetivo de resolver problemas y
+                                aprovechar al máximo el potencial de las herramientas tecnológicas.
+
+                                Mi enfoque se centra en entender las necesidades de cada cliente o proyecto, diseñando
+                                soluciones personalizadas que conecten con las personas y añadan valor real. Desde el
+                                desarrollo de estrategias tecnológicas hasta la creación de productos digitales
+                                innovadores, cada paso refleja mi compromiso con la calidad y la mejora continua.
+
+                                Además de mi experiencia técnica, me motiva aprender constantemente, explorar nuevas
+                                ideas y colaborar con otros para hacer realidad proyectos que marcan la diferencia. Este
+                                portafolio es una muestra de lo que he logrado y un punto de partida para lo que puedo
+                                construir junto a quienes comparten esta visión.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="imagen-seccion-inicio">
+                        <img src="img/acercademi.png" alt="soluciones tecnologicas">
+                    </div>
+
+                </section>
+
+                <!-- Sección 2 -->
+                <section class="seccion-2">
+                    <h2>SERVICIOS</h2>
+                    <p>
+                        Aquí encontrarás una colección de los proyectos que he llevado a cabo, diseñados para resolver
+                        desafíos del mundo real a través de tecnología y creatividad. Desde soluciones digitales que
+                        potencian negocios locales hasta desarrollos tecnológicos que optimizan procesos cotidianos,
+                        este espacio refleja mi pasión por la tecnología aplicada y mi compromiso con la innovación.
+
+                        Explora cada proyecto para descubrir cómo las ideas se transforman en herramientas prácticas que
+                        generan valor, conectan personas y construyen un futuro más eficiente y sostenible. ¿Listo para
+                        descubrir lo que podemos lograr juntos?
+                    </p>
+                    <div class="contenedor-tarjetas">
+                        <article class="tarjeta">
+                            <div class="h3-tarjetas">
+                                <h3>Servicios de Electricidad</h3>
+                            </div>
+                           <div class="imagen-tarjeta">
+                            <img src="img/5(1).png" alt="tarjeta">
+                           </div> 
+
+                            <p class="texto-tarjeta">Diseñamos y desarrollamos Tarejetas, un detalle innovador y
+                                funcional que eleva tu emprendimeinto a otro nivel. Utilizamos
+                                materiales de alta calidad y técnicas de producción artesanales para crear un producto
+                                único y duradero.</p>
+                            <div class="ver-mas"><a href="#">Ver más</a></div>
+                        </article>
+
+                        <article class="tarjeta">
+                            <div class="h3-tarjetas">
+                                <h3>Soluciones Tecnológicas</h3>
+                            </div>
+                            <div class="imagen-tarjeta"><img src="img/6.png" alt="tarjeta"></div>
+                            
+
+                            <p class="texto-tarjeta">Diseñamos y desarrollamos Tarejetas, un detalle innovador y
+                                funcional que eleva tu emprendimeinto a otro nivel. Utilizamos
+                                materiales de alta calidad y técnicas de producción artesanales para crear un producto
+                                único y duradero.</p>
+                            <div class="ver-mas"><a href="#">Ver más</a></div>
+                        </article>
+
+                        <article class="tarjeta">
+                            <div class="h3-tarjetas">
+                                <h3>Soluciones a Emprendimientos</h3>
+                            </div>
+                            <div class="imagen-tarjeta"><img src="img/7.png" alt="tarjeta"></div>
+                            
+
+                            <p class="texto-tarjeta">Diseñamos y desarrollamos Tarejetas, un detalle innovador y
+                                funcional que eleva tu emprendimeinto a otro nivel. Utilizamos
+                                materiales de alta calidad y técnicas de producción artesanales para crear un producto
+                                único y duradero.</p>
+                            <div class="ver-mas"><a href="#">Ver más</a></div>
+                        </article>
+
+                        <article class="tarjeta">
+                            <div class="h3-tarjetas">
+                                <h3>Servicios de Streaming</h3>
+                            </div>
+                            <div class="imagen-tarjeta"><img src="img/8.png" alt="tarjeta"></div>
+                            
+
+                            <p class="texto-tarjeta">Diseñamos y desarrollamos Tarejetas, un detalle innovador y
+                                funcional que eleva tu emprendimeinto a otro nivel. Utilizamos
+                                materiales de alta calidad y técnicas de producción artesanales para crear un producto
+                                único y duradero.</p>
+                            <div class="ver-mas"><a href="#">Ver más</a></div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Sección 1 -->
+                <section id="acercademi" class="seccion-1">
+
+                    <div class="acerca-de">
+                        <h2>
+                            Responsabilidad de la Empresa "José Díaz" en el Cumplimiento de Plazos</h2>
+
                         <p>
-                    
-                    
-                    Aquí encontrarás una colección de los proyectos que he llevado a cabo, diseñados para resolver desafíos del mundo real a través de tecnología y creatividad. Desde soluciones digitales que potencian negocios locales hasta desarrollos tecnológicos que optimizan procesos cotidianos, este espacio refleja mi pasión por la tecnología aplicada y mi compromiso con la innovación.
-                    
-                    Explora cada proyecto para descubrir cómo las ideas se transforman en herramientas prácticas que generan valor, conectan personas y construyen un futuro más eficiente y sostenible. ¿Listo para descubrir lo que podemos lograr juntos?
-                  </p>
-                 </div>
+                            En José Díaz, asumimos un compromiso firme con la responsabilidad y puntualidad en la
+                            realización de nuestros servicios. Entendemos que el tiempo es un recurso valioso tanto para
+                            nuestros clientes como para nosotros, por lo que trabajamos con eficiencia y organización
+                            para cumplir con los plazos acordados.
 
-                 <div class="acerca-imagen">
-                        <img src="img/sobremi2.png" alt="imagen personal, en escritorio">
-                 </div>
-
-            </section>
-
-            <!-- Sección 2 -->
-            <section class="seccion-2">
-                <h2>SECCION 2 </h2>
-                <p>Contactate con nosotros</p>
-              <div>
-   <a href="img/5(1).png"><img src="img/5(1).png" alt="imagen de carrusel"></a>
-    <img src="img/6.png" alt="imagen de carrusel">
-    <img src="img/7.png" alt="imagen de carrusel">
-    <img src="img/8.png" alt="imagen de carrusel">
-    <img src="img/9.png" alt="imagen de carrusel">
-    <img src="img/3(1).png" alt="imagen de carrusel">
-              </div>
-             
-            </section>
-
-            <!-- Sección 3 -->
-            <section class="seccion-3">
-                <h2>SECCION 3</h2>
-                <p>Aquí encontrarás una selección de los proyectos que he llevado adelante, cada uno diseñado para abordar desafíos específicos y aportar soluciones tecnológicas innovadoras.
-
-                    Desde herramientas digitales que optimizan procesos hasta estrategias creativas que fortalecen la conexión entre marcas y sus clientes, mis proyectos reflejan un enfoque práctico, centrado en resultados y adaptado a las necesidades de cada caso.
-                    
-                    Cada iniciativa combina creatividad, conocimiento técnico y una visión orientada al futuro, demostrando cómo la tecnología puede ser una aliada poderosa para transformar ideas en realidades.
-                    
-                    Explora los proyectos para descubrir cómo cada solución no solo resuelve problemas, sino que también crea oportunidades y aporta valor sostenible. Si tienes una idea o desafío en mente, ¡estaré encantado de ayudarte a convertirlo en el próximo gran proyecto!
-                </p>
-            </section> 
-     </main>
-       
-          
-             <div class="aside-1">
-                    <aside class="aside-hoy">
-                        <h3>Noticias</h3>
-                        <h4>Innovaciones Tecnológicas Transforman el Futuro de las Soluciones Empresariales</h4>
-                        <p>
-
-                            15 de diciembre de 2024
-                            
-                            El avance acelerado de la tecnología sigue ofreciendo soluciones disruptivas para problemas globales y locales. Desde la implementación de inteligencia artificial (IA) en la atención al cliente hasta herramientas que optimizan la producción en industrias, la transformación digital está redefiniendo la forma en que las empresas operan.
-                            
-                            Un ejemplo destacado es el desarrollo de plataformas de IA generativa como "Copilot Empresarial", que ayuda a pequeñas y medianas empresas a automatizar tareas administrativas, reducir errores y mejorar la experiencia del cliente. Este tipo de soluciones no solo ahorra tiempo y costos, sino que también permite a los emprendedores enfocarse en la innovación y en construir relaciones más sólidas con sus clientes.
-                            
-                            En el ámbito de la agricultura, Uruguay ha comenzado a implementar drones equipados con sensores avanzados que miden el estado de los cultivos y optimizan el uso de agua y fertilizantes. Esta tecnología ha demostrado aumentar la productividad en un 30% mientras reduce el impacto ambiental, destacando la importancia de la sostenibilidad en las innovaciones tecnológicas.
-                            
-                            Por otro lado, la realidad aumentada y el metaverso están entrando en el comercio minorista. Empresas de diseño local ahora pueden presentar sus productos en espacios virtuales, permitiendo a los clientes experimentar sus compras de manera inmersiva desde cualquier lugar del mundo.
-                            
-                            Finalmente, el desarrollo de soluciones de conectividad, como redes 5G y satélites de baja órbita, está permitiendo que comunidades rurales y remotas accedan a internet de alta velocidad. Esto abre nuevas oportunidades para la educación, la salud y los negocios en áreas que tradicionalmente han estado desconectadas.
-                            
-                            La clave del éxito en esta era tecnológica es la integración de estas soluciones con un enfoque humano, asegurando que los avances no solo impulsen la eficiencia, sino también mejoren la calidad de vida de las personas. Con estos avances, el futuro de las soluciones tecnológicas promete ser tan innovador como inclusivo.
+                            Cada proyecto es planificado cuidadosamente, asegurando que se respeten los tiempos
+                            estipulados sin comprometer la calidad y excelencia que nos caracteriza. La confianza de
+                            nuestros clientes es fundamental, y en José Díaz nos esforzamos día a día para honrarla con
+                            seriedad, responsabilidad y resultados a tiempo.
                         </p>
-                    </aside>
-                    <aside class="aside-hoy">
-                        <h3>Noticias</h3>
-                        <h4>Innovaciones Tecnológicas Transforman el Futuro de las Soluciones Empresariales</h4>
-                        <p>
+                    </div>
 
-                            15 de diciembre de 2024
-                            
-                            El avance acelerado de la tecnología sigue ofreciendo soluciones disruptivas para problemas globales y locales. Desde la implementación de inteligencia artificial (IA) en la atención al cliente hasta herramientas que optimizan la producción en industrias, la transformación digital está redefiniendo la forma en que las empresas operan.
-                            
-                            Un ejemplo destacado es el desarrollo de plataformas de IA generativa como "Copilot Empresarial", que ayuda a pequeñas y medianas empresas a automatizar tareas administrativas, reducir errores y mejorar la experiencia del cliente. Este tipo de soluciones no solo ahorra tiempo y costos, sino que también permite a los emprendedores enfocarse en la innovación y en construir relaciones más sólidas con sus clientes.
-                            
-                            En el ámbito de la agricultura, Uruguay ha comenzado a implementar drones equipados con sensores avanzados que miden el estado de los cultivos y optimizan el uso de agua y fertilizantes. Esta tecnología ha demostrado aumentar la productividad en un 30% mientras reduce el impacto ambiental, destacando la importancia de la sostenibilidad en las innovaciones tecnológicas.
-                            
-                            Por otro lado, la realidad aumentada y el metaverso están entrando en el comercio minorista. Empresas de diseño local ahora pueden presentar sus productos en espacios virtuales, permitiendo a los clientes experimentar sus compras de manera inmersiva desde cualquier lugar del mundo.
-                            
-                            Finalmente, el desarrollo de soluciones de conectividad, como redes 5G y satélites de baja órbita, está permitiendo que comunidades rurales y remotas accedan a internet de alta velocidad. Esto abre nuevas oportunidades para la educación, la salud y los negocios en áreas que tradicionalmente han estado desconectadas.
-                            
-                            La clave del éxito en esta era tecnológica es la integración de estas soluciones con un enfoque humano, asegurando que los avances no solo impulsen la eficiencia, sino también mejoren la calidad de vida de las personas. Con estos avances, el futuro de las soluciones tecnológicas promete ser tan innovador como inclusivo.
+                    <div class="acerca-imagen">
+                        <img src="img/bienvenida.png" alt="imagen personal, en escritorio">
+                    </div>
+
+                </section>
+
+
+
+
+                <!-- Sección 3 -->
+                <section class="seccion-3">
+                   <div class="h2-seccion-3">
+                    <h2>Innovación Tecnológica</h2>
+                   </div> 
+                    <div class="texto-seccion-3">
+                        <p>En José Díaz, apostamos por la innovación tecnológica como motor de crecimiento y mejora
+                        constante. Implementamos herramientas y procesos modernos que nos permiten optimizar la
+                        producción, ofrecer soluciones más eficientes y adaptarnos a las nuevas demandas del mercado.
+
+                        La tecnología nos ayuda a perfeccionar cada detalle de nuestros servicios, garantizando calidad,
+                        precisión y rapidez en cada entrega. Nos mantenemos en constante evolución, buscando siempre
+                        nuevas formas de agregar valor a nuestro trabajo y brindar a nuestros clientes una experiencia
+                        moderna, confiable y efectiva.
                         </p>
-                    </aside>
-                
-            </div>     
-       
-    </div>   
-                   
-          <footer>
+                    </div>
+                    <div class="imagen-innov-tecnologica"><img src="img/innovacion-tecnologica.webp" alt="imagen- Innovación Tecnológica"></div>
+                    
+                </section>
+            </main>
+
+
+            <div class="aside-1">
+                <aside class="aside-hoy">
+                    <h3>Noticias</h3>
+                    <h4>Innovaciones Tecnológicas Transforman el Futuro de las Soluciones Empresariales</h4>
+                    <p>
+
+                        15 de diciembre de 2024
+
+                        El avance acelerado de la tecnología sigue ofreciendo soluciones disruptivas para problemas
+                        globales y locales. Desde la implementación de inteligencia artificial (IA) en la atención al
+                        cliente hasta herramientas que optimizan la producción en industrias, la transformación digital
+                        está redefiniendo la forma en que las empresas operan.
+
+                        Un ejemplo destacado es el desarrollo de plataformas de IA generativa como "Copilot
+                        Empresarial", que ayuda a pequeñas y medianas empresas a automatizar tareas administrativas,
+                        reducir errores y mejorar la experiencia del cliente. Este tipo de soluciones no solo ahorra
+                        tiempo y costos, sino que también permite a los emprendedores enfocarse en la innovación y en
+                        construir relaciones más sólidas con sus clientes.
+
+                        En el ámbito de la agricultura, Uruguay ha comenzado a implementar drones equipados con sensores
+                        avanzados que miden el estado de los cultivos y optimizan el uso de agua y fertilizantes. Esta
+                        tecnología ha demostrado aumentar la productividad en un 30% mientras reduce el impacto
+                        ambiental, destacando la importancia de la sostenibilidad en las innovaciones tecnológicas.
+
+                        Por otro lado, la realidad aumentada y el metaverso están entrando en el comercio minorista.
+                        Empresas de diseño local ahora pueden presentar sus productos en espacios virtuales, permitiendo
+                        a los clientes experimentar sus compras de manera inmersiva desde cualquier lugar del mundo.
+
+                        Finalmente, el desarrollo de soluciones de conectividad, como redes 5G y satélites de baja
+                        órbita, está permitiendo que comunidades rurales y remotas accedan a internet de alta velocidad.
+                        Esto abre nuevas oportunidades para la educación, la salud y los negocios en áreas que
+                        tradicionalmente han estado desconectadas.
+
+                        La clave del éxito en esta era tecnológica es la integración de estas soluciones con un enfoque
+                        humano, asegurando que los avances no solo impulsen la eficiencia, sino también mejoren la
+                        calidad de vida de las personas. Con estos avances, el futuro de las soluciones tecnológicas
+                        promete ser tan innovador como inclusivo.
+                    </p>
+                </aside>
+
+                <aside class="aside-hoy">
+                    <h3>Noticias</h3>
+                    <h4>Innovaciones Tecnológicas Transforman el Futuro de las Soluciones Empresariales</h4>
+                    <p>
+
+                        15 de diciembre de 2024
+
+                        El avance acelerado de la tecnología sigue ofreciendo soluciones disruptivas para problemas
+                        globales y locales. Desde la implementación de inteligencia artificial (IA) en la atención al
+                        cliente hasta herramientas que optimizan la producción en industrias, la transformación digital
+                        está redefiniendo la forma en que las empresas operan.
+
+                        Un ejemplo destacado es el desarrollo de plataformas de IA generativa como "Copilot
+                        Empresarial", que ayuda a pequeñas y medianas empresas a automatizar tareas administrativas,
+                        reducir errores y mejorar la experiencia del cliente. Este tipo de soluciones no solo ahorra
+                        tiempo y costos, sino que también permite a los emprendedores enfocarse en la innovación y en
+                        construir relaciones más sólidas con sus clientes.
+
+                        En el ámbito de la agricultura, Uruguay ha comenzado a implementar drones equipados con sensores
+                        avanzados que miden el estado de los cultivos y optimizan el uso de agua y fertilizantes. Esta
+                        tecnología ha demostrado aumentar la productividad en un 30% mientras reduce el impacto
+                        ambiental, destacando la importancia de la sostenibilidad en las innovaciones tecnológicas.
+
+                        Por otro lado, la realidad aumentada y el metaverso están entrando en el comercio minorista.
+                        Empresas de diseño local ahora pueden presentar sus productos en espacios virtuales, permitiendo
+                        a los clientes experimentar sus compras de manera inmersiva desde cualquier lugar del mundo.
+
+                        Finalmente, el desarrollo de soluciones de conectividad, como redes 5G y satélites de baja
+                        órbita, está permitiendo que comunidades rurales y remotas accedan a internet de alta velocidad.
+                        Esto abre nuevas oportunidades para la educación, la salud y los negocios en áreas que
+                        tradicionalmente han estado desconectadas.
+
+                        La clave del éxito en esta era tecnológica es la integración de estas soluciones con un enfoque
+                        humano, asegurando que los avances no solo impulsen la eficiencia, sino también mejoren la
+                        calidad de vida de las personas. Con estos avances, el futuro de las soluciones tecnológicas
+                        promete ser tan innovador como inclusivo.
+                    </p>
+                </aside>
+
+            </div>
+
+
+        </div>
+        <footer>
             <p>Contacto: contacto@tusitio.com | Tel: +598 1234 5678</p>
             <p>Síguenos en:
-                 <a href="https://www.facebook.com/tusitio" target="_blank">Facebook</a> |
-                 <a href="https://www.instagram.com/tusitio" target="_blank">Instagram</a> |
+                <a href="https://www.facebook.com/tusitio" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com/tusitio" target="_blank">Instagram</a> |
                 <a href="https://twitter.com/tusitio" target="_blank">Twitter</a>
-             </p>
-             <ul>
+            </p>
+            <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#acercademi">Acerca de mí</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#politica-privacidad">Política de Privacidad</a></li>
             </ul>
-                <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
-                <p>Desarrollado por José López. Diseñado con HTML y CSS.</p>
+            <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+            <p>Desarrollado por José López. Diseñado con HTML y CSS.</p>
+            <a href="index.html" target="_blank"><i class="fa-regular fa-lightbulb"></i></a>
         </footer>
-        <a href="#arriba" target="_blank"><i class="fa-regular fa-lightbulb"></i></a>
-        <script src="./index.js"></script>
+
+        <!--<script src="./index.js"></script>-->
+
 </body>
+
 </html>
